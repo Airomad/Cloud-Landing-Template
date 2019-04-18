@@ -5,17 +5,24 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import Icon from './Icon';
 import styles from './styles';
 
 class BottomCard extends PureComponent {
   render() {
-    const { classes } = this.props;
+    const { classes, type, title, iconName } = this.props;
+    const style = {
+      marginTop: type === "secondary" ? 0 : 60,
+    };
 
     return (
-      <Card className={classes.card}>
+      <Card className={classes.card} style={style}>
         <CardContent>
-          <Typography className={classes.title1}>
-            1. Reliability
+          <div class={classes.iconContainer}>
+            <Icon name={iconName} />
+          </div>
+          <Typography className={type === "secondary" ? classes.title2 : classes.title1}>
+            {title}
           </Typography>
           <Typography variant="body1" component="p" className={classes.text}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.

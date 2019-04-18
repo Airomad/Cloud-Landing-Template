@@ -3,12 +3,12 @@ export default {
     height: 64,
     boxShadow: 'none',
     backgroundColor: '#1A1E31',
-    // border: '1px solid red',
   },
-  text: {
+  brand: {
     flexGrow: 1,
-    color: '#605C85',
+    color: 'white',
     fontWeight: 'normal',
+    marginLeft: 8,
   },
   button: {
     fontSize: 16,

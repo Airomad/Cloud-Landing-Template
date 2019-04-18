@@ -4,6 +4,7 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
+import LogoIcon from './LogoIcon';
 import styles from './styles';
 
 class TopBar extends PureComponent {
@@ -13,8 +14,9 @@ class TopBar extends PureComponent {
     return (
       <AppBar position="static" className={classes.root}>
         <Toolbar>
-          <Typography variant="h6" color="inherit" className={classes.text}>
-            Cloud
+          <LogoIcon />
+          <Typography variant="h6" color="inherit" className={classes.brand}>
+            WorldCloud
           </Typography>
           <Button color="inherit" className={classes.button}>Locations</Button>
           <Button color="inherit" className={classes.button}>Costs</Button>

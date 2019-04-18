@@ -9,14 +9,15 @@ export default {
     transition: '0.3s',
     // border: '1px solid blue',
     '&:hover': {
-      transform: 'scale(1.05)',
+      transform: 'scale(1.03)',
       transition: '0.3s'
     }
   },
-  bullet: {
-    display: 'inline-block',
-    margin: '0 2px',
-    transform: 'scale(0.8)',
+  iconContainer: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    paddingBottom: 32,
   },
   title1: {
     fontSize: 32,

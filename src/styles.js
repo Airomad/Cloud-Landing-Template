@@ -1,5 +1,4 @@
 import bgImage from './bg.png';
-import mapImage from './map.png';
 
 const styles = theme => ({
   root: {
@@ -31,17 +30,6 @@ const styles = theme => ({
   },
   marked: {
     color: '#B363D2',
-  },
-  map: {
-    display: 'block',
-    maxWidth: 1000,
-    width: '90%',
-    height: 500,
-    backgroundImage: `url(${mapImage})`,
-    backgroundRepeat: 'no-repeat',
-    backgroundPosition: 'center',
-    backgroundSize: 'contain',
-    marginTop: 27,
   },
   bottomCardsGroup: {
     width: 1100,
