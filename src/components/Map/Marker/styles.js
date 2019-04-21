@@ -9,10 +9,15 @@ export default {
     border: 'none',
     outline: 'none',
     cursor: 'pointer',
-    transition: '0.3s',
+    transition: '0.5s',
+    transform: 'scale(1)',
     '&:hover': {
-      transform: 'scale(1.1)',
-      transition: '0.3s',
+      transform: 'scale(1.2)',
+      transition: '0.5s',
     }
+  },
+  active: {
+    transform: 'scale(1.4)',
+    transition: '0.5s',
   }
 };

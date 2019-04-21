@@ -13,12 +13,33 @@ const MARKERS = [
 ];
 
 class Map extends Component {
+  targetMarkerPointer = -1;
+
   state = {
     activeMarker: null,
   };
 
   toggleMarker = (markerKey) => {
     this.setState({ activeMarker: this.state.activeMarker === markerKey ? null : markerKey });
+  }
+
+  turnOnNextMarker = () => {
+    this.targetMarkerPointer += 1;
+    if (this.targetMarkerPointer > MARKERS.length - 1) {
+      this.targetMarkerPointer = 0;
+    }
+    const nextMarker = MARKERS[this.targetMarkerPointer];
+    this.setState(
+      { activeMarker: nextMarker.key },
+      () => setTimeout(this.turnOnNextMarker, 1000)
+    );
+  }
+
+  componentDidMount() {
+    setTimeout(
+      this.turnOnNextMarker,
+      1000,
+    );
   }
 
   render() {

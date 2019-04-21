@@ -12,6 +12,7 @@ function App(props) {
   return (
     <div className={classes.root}>
       <div className={classes.bgImage}>
+
         <TopBar />
         <div className={classes.titleContainer}>
           <Typography variant="h3" color="inherit" className={classes.h1}>
