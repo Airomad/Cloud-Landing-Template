@@ -1,5 +1,5 @@
 # What
-> It's part of my personal **Study Sandbox**. This template was made based on free mockup from [https://www.sketchappsources.com/free-source/2414-cloud-app-landing-page-template-sketch-freebie-resource.html](https://www.sketchappsources.com). It's free for any use.
+> It's part of my personal **Study Sandbox**. This template was made based on free mockup from [https://www.sketchappsources.com/free-source](https://www.sketchappsources.com/free-source/2414-cloud-app-landing-page-template-sketch-freebie-resource.html). It's free for any use.
 
 Built on:
   - React
